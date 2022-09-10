@@ -1,32 +1,23 @@
+import Contact from "~/components/Contact/Contact";
+import Footer from "~/components/Footer/Footer";
+import Gallery from "~/components/Gallery/Gallery";
+import Navbar from "~/components/Nav/Navbar";
+import HeaderSection from "~/components/Section/HeaderSection";
+import Main from "~/components/Section/Main";
+import Offer from "~/components/Section/Offer";
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <>
+      <Navbar />
+      <Main />
+      <HeaderSection />
+      <Offer />
+      <HeaderSection />
+      <Gallery />
+      <HeaderSection />
+      <Contact />
+      <Footer />
+    </>
   );
 }
