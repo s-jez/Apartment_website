@@ -2,10 +2,8 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "npm run build:css && remix build",
-    "build:css": "node-sass ./styles -o ./app/styles --output-style compressed",
+    "build": "remix build",
     "dev:remix": "remix watch",
-    "dev:css": "npm run build:css && node-sass -rw ./styles -o ./app/styles""dev:wrangler": "cross-env NODE_ENV=development wrangler pages dev ./public",
     "dev": "remix build && run-p \"dev:*\"",
     "start": "cross-env NODE_ENV=production npm run dev:wrangler"
   },
